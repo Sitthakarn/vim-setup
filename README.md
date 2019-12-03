@@ -130,3 +130,27 @@ filetype plugin indent on
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+## Install NERDTree 
+
+```
+$ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+$ vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+```
+Here are the basics of how to use the plugin:
+
+Use the natural vim navigation keys hjkl to navigate the files.
+Press o to open the file in a new buffer or open/close directory.
+Press t to open the file in a new tab.
+Press i to open the file in a new horizontal split.
+Press s to open the file in a new vertical split.
+Press p to go to parent directory.
+Press r to refresh the current directory.
+All other keyboard shortcuts can be found by pressing ?. It will open a special help screen with the shortcut listings. Press ? again to get back to file tree.
+
+To close the plugin execute the :NERDTreeClose command.
+
+Typing :NERDTree and :NERDTreeClose all the time is really inconvenient. Therefore I have mapped the toggle command :NERDTreeToggle to the F2 key. This way I can quickly open and close Nerd Tree whenever I want. You can also map it to F2 by putting 
+```vim
+map <F2> :NERDTreeToggle<CR> in your .vimrc file.
+```
