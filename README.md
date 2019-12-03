@@ -137,7 +137,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 $ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 $ vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 ```
-Here are the basics of how to use the plugin:
+Then put ```autocmd vimenter * NERDTree``` in .vimrc file.
+
+### Here are the basics of how to use the plugin:
 
 Use the natural vim navigation keys hjkl to navigate the files.
 Press o to open the file in a new buffer or open/close directory.
