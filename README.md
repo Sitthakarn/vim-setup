@@ -150,4 +150,6 @@ All other keyboard shortcuts can be found by pressing ?. It will open a special 
 
 To close the plugin execute the :NERDTreeClose command.
 
-Typing :NERDTree and :NERDTreeClose all the time is really inconvenient. Therefore I have mapped the toggle command :NERDTreeToggle to the F2 key. This way I can quickly open and close Nerd Tree whenever I want. You can also map it to F2 by putting ```map <F2> :NERDTreeToggle<CR>``` in your .vimrc file.
+Typing ```:NERDTree``` and ```:NERDTreeClose``` all the time is really inconvenient. 
+
+Or mapped the toggle command :NERDTreeToggle to the F2 key. by putting ```map <F2> :NERDTreeToggle<CR>``` in your .vimrc file.
